@@ -1,0 +1,105 @@
+ /* Ici ce sont les couleurs principales que j'ai définies */
+:root {
+  --bleu-nelyos: #0d1b4c; 
+  --or-nelyos: #ffffff;   
+  --blanc-nelyos: #ffffff;
+}
+
+/*Contenu du body*/
+body {
+    font-family: 'Open Sans', ;
+}
+
+.navbar {
+    background-color: var(--bleu-nelyos);
+}
+
+@media (max-width: 991.9px) {
+  #menu {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: start;
+      transform: translateY(-100px);
+    }
+  .navbar {
+    height: 200px;
+  }
+}
+
+.navbar-brand img {
+    height: 100px;
+    width: auto;
+}
+
+.nav-link {
+  color: var(--blanc-nelyos) !important;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.nav-link:hover {
+  color: var(--or-nelyos) !important;
+  text-decoration: underline !important;
+  transform: scale(1.3);
+  transform: translateX(10px);
+  transition: transform 0.3s;
+}
+
+.imagetrans:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+#menu {
+  font-family:'Poppins', 'Montserrat',  sans-serif;
+  font-size: large;
+}
+
+#universityCarousel {
+  height: 400px;
+  overflow: hidden;
+  background-color: var(--bleu-nelyos);
+  border: 2px solid var(--or-nelyos);
+  border-radius: 50px;
+}
+.banniereimg {
+  height: 400px;
+  object-fit: contain;
+}
+
+.textapropos {
+  text-align: center;
+}
+
+.programmetext {
+  background: var(--blanc-nelyos);
+  border-radius: 12px;
+  border: 2px solid var(--or-nelyos);
+  padding: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.programmetext:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px black;
+}
+
+.programmeimg {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+}
+
+
+footer {
+  background-color: var(--bleu-nelyos);
+  color: var(--blanc-nelyos);
+  padding: 0 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.foottitre {
+  color:#d4af37;
+}
+

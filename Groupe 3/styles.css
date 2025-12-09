@@ -1,0 +1,37 @@
+ /* Ici ce sont les couleurs principales que j'ai définies */
+:root {
+  --bleu-nelyos: #0d1b4c; 
+  --or-nelyos: #d4af37;   
+  --blanc-nelyos: #ffffff;
+}
+
+/*Contenu du body*/
+.navbar {
+    background-color: var(--bleu-nelyos);}
+
+.navbar-brand img {
+    height: 80px;
+}
+
+.nav-link {
+  color: var(--blanc-nelyos) !important;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.nav-link:hover {
+  color: var(--or-nelyos) !important;
+}
+
+.centragetexte {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  background-color: var(--bleu-nelyos);
+  color: var(--blanc-nelyos);
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+}

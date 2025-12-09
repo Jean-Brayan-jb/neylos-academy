@@ -1,0 +1,123 @@
+
+
+        /* Ici ce sont les couleurs principales que j'ai définies */
+    :root {
+    --bleu-nelyos:RGB(245, 189, 2); 
+    --or-nelyos: RGB(245, 189, 2);   
+    --blanc-nelyos: #ffffff;
+    --light-bg: #F5F7F8;
+    --text-dark: #111;
+    --card-bg: RGB(245, 189, 2); 
+    --primary-color: rgb(4, 4, 54);
+    }
+
+        body {
+            background-color: #ffffff;
+            color: var(--text-dark);
+            font-family: 'Inter', sans-serif;
+        }
+
+
+                /*Contenu du body*/
+        .navbar {
+            background-color: var(--bleu-nelyos);}
+
+        .navbar-brand img {
+            height: 80px;
+        }
+
+        .nav-link {
+        color: var(--blanc-nelyos) !important;
+        font-weight: 500;
+        margin-left: 10px;
+        }
+
+        .nav-link:hover {
+        color: var(--or-nelyos) !important;
+        }
+
+        .centragetexte {
+        display: flex;
+        flex-wrap: wrap;
+        }
+
+       
+        /* HERO */
+        .hero-container {
+            padding: 90px 0;
+        }
+
+        .hero-img {
+            width: 700px;
+            height: 500px;
+        }
+        
+        div a{
+            color: rgb(73, 72, 72);
+            text-decoration: none;
+            
+        }
+
+        /* FILIÈRE CARDS */
+        .program-card {
+            border: 3px solid black;
+            border-radius: 14px;
+            padding: 25px;
+            transition: .3s;
+        }
+
+        .program-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+        }
+
+        .icon-circle {
+            width: 70px;
+            height: 70px;
+            background-color: rgb(173, 192, 222);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            
+            font-size: 30px;
+        }
+
+        div img{
+            width:30px;
+            height:30px;
+        }
+
+        /* Why choose us */
+        .why-item i {
+            font-size: 42px;
+            color: var(--primary-color);
+        }
+        
+        
+        footer {
+                background-color: var(--bleu-nelyos);
+                color: var(--blanc-nelyos);
+                padding: 20px 0;
+                text-align: center;
+                margin-top: 40px;
+        }
+
+        i img{
+             width:70px;
+            height:70px;
+        }
+
+        .back {
+            background-color: rgb(173, 192, 222);
+            width: 100%;
+        }
+
+        .logo{
+            width: 110px;
+            height: 110px;
+        }
+
+
+
+        

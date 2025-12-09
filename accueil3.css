@@ -1,0 +1,149 @@
+ /* Ici ce sont les couleurs principales que j'ai définies */
+:root {
+  --bleu-nelyos: #0d1b4c; 
+  --or-nelyos: #d4af37;   
+  --blanc-nelyos: #ffffff;
+  --jaune-vif: #FFFF00;
+}
+
+/*Contenu du body*/
+body {
+    font-family: 'Open Sans', ;
+    background: linear-gradient(135deg, rgba(47, 70, 152, 0.7), rgba(3, 21, 85, 0.5)), url('image joie.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.jaune{
+  color: var(--or-nelyos);
+
+}
+
+.text-centert {
+  text-align: center !important;
+  color: #FFFF00;
+}
+
+.text-centerro {
+  text-align: center !important;
+  color: #FF0000 !important;
+}
+
+.cadre{
+  border: 5px solid var(--or-nelyos);
+  border-radius: 15px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.navbar {
+    background-color: var(--bleu-nelyos);
+}
+
+@media (max-width: 991.9px) {
+  #menu {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: start;
+      transform: translateY(-100px);
+    }
+  .navbar {
+    height: 200px;
+  }
+}
+
+.navbar-brand img {
+    height: 100px;
+    width: auto;
+}
+
+.nav-link {
+  color: var(--blanc-nelyos) !important;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.nav-link:hover {
+  color: var(--or-nelyos) !important;
+  text-decoration: underline !important;
+  transform: scale(1.3);
+  transform: translateX(10px);
+  transition: transform 0.3s;
+}
+
+.imagetrans:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+#menu {
+  font-family:'Poppins', 'Montserrat',  sans-serif;
+  font-size: large;
+}
+
+#universityCarousel {
+  overflow: hidden;
+  border: 20px solid var(--or-nelyos);
+  border-radius: 50px;
+}
+.banniereimg {
+  width: 100%;
+
+  object-fit: contain;
+}
+
+.textapropos {
+  text-align: center;
+}
+
+.programmetext {
+  background: var(--blanc-nelyos);
+  border-radius: 12px;
+  border: 2px solid var(--or-nelyos);
+  padding: 15px;
+  transition: 0.1s ease-in-out;
+}
+
+
+.programmetext:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 50px black;
+}
+
+.centremoistp{
+  align-items: center;
+  display: flex;
+}
+
+.programmeimg {
+  width: 100%;
+  height: 400px;
+ 
+}
+
+.textlicence {
+  transform: translateY(80px);
+}
+
+.ptext {
+  transform: translateY(120px);
+}
+
+.pimg {
+  height: 350px;
+
+}
+
+footer {
+  background-color: var(--bleu-nelyos);
+  color: var(--blanc-nelyos);
+  padding: 0 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.foottitre {
+  color:#d4af37;
+}
+
