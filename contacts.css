@@ -1,0 +1,264 @@
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f5f5f5;
+    }
+
+    header {
+        background: linear-gradient(120deg, #0f0d69, #161052);
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.2rem;
+    }
+
+.container.fordiv {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 800px) {
+  .container.fordiv {
+    grid-template-columns: 1fr;
+  }
+}
+
+.reduit {
+  width: 100%;
+  max-height: 300px;
+  width: auto;
+  border-radius: 12px;
+}
+
+
+    .card {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        margin-top: 0;
+        color: #110a47;
+    }
+
+.contact-info {
+  background: linear-gradient(135deg, #0f0d69, #161052);
+  color: white;
+}
+
+.contact-info h2 {
+  color: #fff;
+}
+
+.contact-info p {
+  color: #fff;
+}
+
+.contact-info p strong {
+  color: #f5c97a;
+}
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+    }
+
+    textarea {
+        resize: vertical;
+        height: 150px;
+    }
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border:2px solid #100f5f;
+  box-shadow: 0 0 0 2px rgba(16,15,95,0.15);
+}
+
+
+    button {
+        background: #100f5f;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #111049;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 300px;
+        border: none;
+        border-radius: 12px;
+    }
+
+
+ /* Ici ce sont les couleurs principales que j'ai définies */
+:root {
+  --bleu-nelyos: #0d1b4c; 
+  --or-nelyos: #d4af37;   
+  --blanc-nelyos: #ffffff;
+}
+
+/*Contenu du body*/
+body {
+    font-family: 'Open Sans', ;
+}
+
+.navbar {
+  background-color: var(--bleu-nelyos);
+}
+
+
+.navbar-toggler {
+  border: none;
+  padding: 8px;
+}
+
+.burger,
+.burger::before,
+.burger::after {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.burger::before {
+  top: -8px;
+}
+
+.burger::after {
+  top: 8px;
+}
+
+.navbar-brand img {
+  height: 100px;
+  width: auto;
+}
+
+.nav-link {
+  color: var(--blanc-nelyos) !important;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.nav-link:hover {
+  color: var(--or-nelyos) !important;
+  text-decoration: underline !important;
+  transform: scale(1.1) translateX(10px);
+  transition: transform 0.3s;
+}
+
+.imagetrans:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+#menu {
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  font-size: large;
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: var(--bleu-nelyos);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+  }
+
+  .nav-link:hover {
+  transform: scale(1.1) translateX(-30px);
+  transition: transform 0.3s;
+  }
+}
+
+#universityCarousel {
+  height: 400px;
+  overflow: hidden;
+  background-color: var(--bleu-nelyos);
+  border: 2px solid var(--or-nelyos);
+  border-radius: 50px;
+}
+.banniereimg {
+  height: 400px;
+  object-fit: contain;
+}
+
+.textapropos {
+  text-align: center;
+}
+
+.programmetext {
+  background: var(--blanc-nelyos);
+  border-radius: 12px;
+  border: 2px solid var(--or-nelyos);
+  padding: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.programmetext:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px black;
+}
+
+.programmeimg {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+}
+
+
+footer {
+  background-color: var(--bleu-nelyos);
+  color: var(--blanc-nelyos);
+  padding: 0 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.foottitre {
+  color:#d4af37;
+}
+

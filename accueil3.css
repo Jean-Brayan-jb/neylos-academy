@@ -1,0 +1,283 @@
+ /* Ici ce sont les couleurs principales que j'ai définies */
+:root {
+  --bleu-nelyos: #0d1b4c; 
+  --or-nelyos: #d4af37;   
+  --blanc-nelyos: #ffffff;
+  --jaune-vif: #FFFF00;
+}
+
+/*Contenu du body*/
+body {
+    font-family: 'Open Sans', ;
+    background: linear-gradient(135deg, rgba(47, 70, 152, 0.7), rgba(3, 21, 85, 0.5)), url('image joie.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.jaune{
+  color: var(--or-nelyos);
+
+}
+
+.text-centert {
+  text-align: center !important;
+  color: #FFFF00;
+}
+
+.text-centerro {
+  text-align: center !important;
+  color: #FF0000 !important;
+}
+
+.cadre{
+  border: 5px solid var(--or-nelyos);
+  border-radius: 15px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+ height: 1000px;
+
+}
+
+.navbar {
+  background-color: var(--bleu-nelyos);
+}
+
+
+.navbar-toggler {
+  border: none;
+  padding: 8px;
+}
+
+.burger,
+.burger::before,
+.burger::after {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.burger::before {
+  top: -8px;
+}
+
+.burger::after {
+  top: 8px;
+}
+
+.navbar-brand img {
+  height: 100px;
+  width: auto;
+}
+
+.nav-link {
+  color: var(--blanc-nelyos) !important;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.nav-link:hover {
+  color: var(--or-nelyos) !important;
+  text-decoration: underline !important;
+  transform: scale(1.1) translateX(10px);
+  transition: transform 0.3s;
+}
+
+.imagetrans:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+#menu {
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  font-size: large;
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: var(--bleu-nelyos);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+  }
+
+  .nav-link:hover {
+  transform: scale(1.1) translateX(-30px);
+  transition: transform 0.3s;
+  }
+}
+
+.veu{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.veu marquee {
+  width: 100%;
+  height: 100%;
+}
+
+.veu .row {
+  display: flex !important;
+  align-items: center;
+  animation: scrollPartners 30s linear infinite;
+}
+
+@keyframes scrollPartners {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.veu .col-md-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.veu .col-md-3 img {
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  filter: brightness(1) drop-shadow(0 4px 8px rgba(212, 175, 55, 0.3));
+}
+
+.veu .col-md-3:hover {
+  animation: zoomIn 0.6s ease-out forwards;
+}
+
+.veu .col-md-3:hover img {
+  filter: brightness(1.3) drop-shadow(0 10px 20px rgba(212, 175, 55, 0.8));
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
+#universityCarousel {
+  overflow: hidden;
+  border: 20px solid var(--or-nelyos);
+  border-radius: 50px;
+}
+.banniereimg {
+  width: 100%;
+  object-fit: contain;
+}
+.bas{
+  margin: 50px 20px;
+  font-family: lucida  handwriting, cursive;
+  color: #ffffff;
+  text-align: center;
+  padding: 80px;
+} 
+
+.police{
+    font-size: 120px;
+    box-shadow: 0 50px 500px rgb(3, 3, 3);
+}
+
+.partenaires{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen;
+   background-color: var(--bleu-nelyos);
+   color: #ffffff;
+   padding: 10px 0px;
+}
+
+.textapropos {
+  text-align: center;
+}
+
+.programmetext {
+  background: var(--blanc-nelyos);
+  border-radius: 12px;
+  border: 2px solid var(--or-nelyos);
+  padding: 15px;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), 
+              box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 0.45s ease;
+  transform: scale(1);
+  will-change: transform, box-shadow;
+}
+
+.programmetext:hover {
+  transform: translateY(-18px) scale(1.20);
+  border-color: #f0d060;
+  box-shadow: 
+    0 20px 50px rgba(239, 195, 3, 0.5),
+    0 10px 25px rgba(215, 243, 5, 0.3),
+    0 0 30px rgba(255, 230, 3, 0.942),
+    inset 0 1px 0 rgba(246, 255, 0, 0.6);
+}
+
+.centremoistp{
+  align-items: center;
+  display: flex;
+}
+
+.programmeimg {
+  width: 100%;
+  height: 400px;
+ 
+}
+
+.textlicence {
+  transform: translateY(80px);
+}
+
+.ptext {
+  transform: translateY(120px);
+}
+
+.pimg {
+  height: 350px;
+
+}
+
+footer {
+  background-color: var(--bleu-nelyos);
+  color: var(--blanc-nelyos);
+  padding: 0 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.foottitre {
+  color:#d4af37;
+}
+
+.WRITE{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 10px;
+  width: fit-content;
+   margin: 0 auto;
+}

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="accueil.css">
+    <link rel="stylesheet" href="bootstrap1.css">
+    <link rel="shortcut icon" href="WhatsApp Image 2025-11-27 à 10.12.10_127332c5.jpg">
+    <script src="bootstrap.js" defer></script>
+    <script src="bootstrap.bundle.js" defer></script>
+    <title>Neylos Academy | Formation dans le domaine international</title>
+  </head>
+
+  <body>
+    <!--C'est Navbar-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img class="imagetrans" width="100px" src="WhatsApp Image 2025-11-27 à 10.12.10_127332c5.jpg" alt="Logo Nelyos Academy">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="menu">
+          <span class="burger"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="menu">
+          <ul class="navbar-nav ms-auto text-end">
+            <li class="nav-item fw-bold"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item fw-bold"><a class="nav-link" href="nos_filière.html">Nos Filières</a></li>
+            <li class="nav-item fw-bold"><a class="nav-link" href="galerie.html">Galerie</a></li>
+            <li class="nav-item fw-bold"><a class="nav-link" href="contacts.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Chaque contenu de la page se situera ici-->
+    <section class="container-fluid">
+      <!--Voici la section hero section-->
+      <div class="hero-section">
+        <video autoplay muted playsinline class="hero-video" id="herovideo"></video>
+        <div class="hero-overlay"></div>
+        <div class="container position-relative text-white py-5 hero-content">
+          <h5 class="fw-bold titrevideo mb-5">
+            L’exigence académique au service de l’innovation, de la connaissance et de l’avenir professionnel.
+          </h5>
+          <a href="#actualites" class="boutonne mt-3">
+            Nos différentes actualités académiques
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--Voici les zones de section-->
+      <!--Voici la section à propos-->
+      <section class="mt-5 container text-center">
+        <h2 class="fw-bold">À propos de Neylos Academy</h2>
+        <p class="textapropos mt-3">
+          Notre établissement est une école d’enseignement supérieur imaginée pour incarner ce que pourrait être l’éducation si l’innovation
+          passait avant tout. Nous formons des étudiants capables de créer, transformer et influencer leur époque. Notre pédagogie repose
+          sur des enseignements modernes, des projets concrets et une immersion totale dans des environnements numériques performants. <br><br>
+          Notre campus mêle technologies émergentes, accompagnement sur mesure et ouverture internationale. Nous préparons les leaders, 
+          créatifs et bâtisseurs de demain avec une vision tournée vers le futur et une ambition simple: révéler le potentiel de chacun.
+        </p>
+      </section>
+      <!--Voici la section Actualité-->
+      <section class="container my-5">
+        <h2 class="text-center mb-4 fw-bold" id="actualites">Actualités</h2>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="programmetext text-center h-100 actulien" onclick="openActu('labo')">
+              <img src="image-innov.jpg" class="programmeimg" alt="Image de Communication">
+              <h5 class="fw-bold mt-3">Lancement du laboratoire numérique</h5>
+              <p>>Notre école ouvre un espace entièrement dédié à la création et à l’expérimentation numérique.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="programmetext text-center h-100 actulien" onclick="openActu('portes')">
+              <img src="image-tkt.jpg" class="programmeimg" alt="Image Informatique">
+              <h5 class="fw-bold mt-3">Journée Portes Ouvertes 2025</h5>
+              <p>Rencontre avec nos enseignants, visites guidées, ateliers interactifs.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="programmetext text-center h-100 actulien" onclick="openActu('concours')">
+              <img src="image-concours.jpg" class="programmeimg" alt="Image de Droit">
+              <h5 class="fw-bold mt-3">Concours d’innovation étudiante</h5>
+              <p>Les étudiants présentent leurs projets technologiques devant un jury professionnel.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="programmetext text-center h-100 actulien" onclick="openActu('biblio')">
+              <img src="image-bibliothèque.jpg" class="programmeimg" alt="Image de Marketing">
+              <h5 class="fw-bold mt-3">Bibliothèque virtuelle</h5>
+              <p>Accès illimité à des milliers de contenus académiques, mis à jour chaque semaine.</p>
+            </div>
+          </div>
+        </div>
+        <!--La zone de disparition et de réapparition putain j'ai appris quelque chose-->
+        <div id="actu-panel" class="actu-panel">
+          <div class="actu-overlay"></div>
+          <div class="actu-content container">
+            <h3 id="actu-title"></h3>
+            <p id="actu-text"></p>
+          </div>
+        </div>
+      </section>
+
+      <!--Voici la section des programmes-->
+      <section class="container py-5" id="les_programmes">
+        <h2 class="text-center mb-5 fw-bold">Nos Programmes de Licence</h2>
+        <div class="container py-5">
+
+          <!--Zone informatique-->
+          <div class="row align-items-center g-4 mb-5">
+            <div class="col-lg-6">
+              <div class="programme-carte">
+                <h4>Licence Informatique</h4>
+                <p class="programme-desc">
+                  Formation axée sur la programmation, les systèmes informatiques et la résolution de problèmes concrets.
+                </p>
+                <ul>
+                  <li>Développement web, mobile et logiciels</li>
+                  <li>Réseaux, bases de données et sécurité</li>
+                  <li>Projets pratiques et travail en équipe</li>
+                </ul>
+                <p class="debouches">
+                  <strong>Débouchés :</strong> développeur, technicien systèmes, analyste informatique...
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img src="image deboucher3.jpg" class="img-pro" alt="Licence Informatique">
+            </div>
+          </div>
+        
+          <!-- Zone communication -->
+          <div class="row align-items-center g-4 mb-5 flex-lg-row-reverse">
+            <div class="col-lg-6">
+              <div class="programme-carte">
+                <h4>Licence Communication</h4>
+                <p class="programme-desc">
+                  Comprendre, informer et influencer à travers des stratégies de communication modernes.
+                </p>
+                <ul>
+                  <li>Médias et communication digitale</li>
+                  <li>Création audiovisuelle et écriture professionnelle</li>
+                  <li>Storytelling et gestion d’image</li>
+                </ul>
+                <p class="debouches">
+                  <strong>Débouchés :</strong> chargé de communication, relations publiques, médias...
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img src="image deboucher4.jpg" class="img-pro" alt="Licence Communication">
+            </div>
+          </div>
+        
+          <!-- Zone marketing -->
+          <div class="row align-items-center g-4 mb-5">
+            <div class="col-lg-6">
+              <div class="programme-carte">
+                <h4>Licence Marketing</h4>
+                <p class="programme-desc">
+                  Analyse des marchés, compréhension des consommateurs et stratégies de marque.
+                </p>
+                <ul>
+                  <li>Marketing digital et branding</li>
+                  <li>Analyse de données et campagnes</li>
+                  <li>Vision stratégique et créativité</li>
+                </ul>
+                <p class="debouches">
+                  <strong>Débouchés :</strong> marketeur digital, chef de projet, analyste marketing...
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img src="image deboucher1.jpg" class="img-pro" alt="Licence Marketing">
+            </div>
+          </div>
+        
+          <!-- Zone droit -->
+          <div class="row align-items-center g-4 mb-5 flex-lg-row-reverse">
+            <div class="col-lg-6">
+              <div class="programme-carte">
+                <h4>Licence Droit</h4>
+                <p class="programme-desc">
+                  Bases solides en droit et développement de la rigueur juridique.
+                </p>
+                <ul>
+                  <li>Droit civil, pénal et constitutionnel</li>
+                  <li>Analyse de textes et cas pratiques</li>
+                  <li>Méthodologie juridique</li>
+                </ul>
+                <p class="debouches">
+                  <strong>Débouchés :</strong> métiers juridiques, administratifs ou de conseil...
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img src="image deboucher2.jpg" class="img-pro" alt="Licence Droit">
+            </div>
+          </div>
+        
+        </div>
+      </section>
+
+      <!--Voici la section nos partenaires-->
+      <section class="py-5 bg-light" id="partenaires">
+        <div class="container text-center">
+          <h2 class="mb-4">Nos Partenaires</h2>
+          <p class="mb-5">
+            Nos partenariats reflètent l’ambition de Neylos Academy : ouvrir nos étudiants au monde professionnel dès leur formation. 
+            Grâce à des collaborations avec des entreprises locales, des agences créatives, des cabinets juridiques et des structures technologiques, 
+            nos étudiants participent à des projets concrets, des ateliers spécialisés et des immersions professionnelles enrichissantes.
+          </p>
+        <div class="partnar">
+          <div class="partnar-enfant">
+            <img class="partnar-img" src="IANA.jpg" alt="IANA">
+            <img class="partnar-img" src="EIMB.jpg" alt="EIMB">
+            <img class="partnar-img" src="ISTV.jpg" alt="ISTV">
+            <img class="partnar-img" src="CYBERTECH.jpg" alt="CYBERTECH">
+            <img class="partnar-img" src="POLYGENIUS.jpg" alt="POLYGENIUS">
+            <img class="partnar-img" src="SKYNET.jpg" alt="SKYNET">
+            <img class="partnar-img" src="IANA.jpg" alt="IANA">
+            <img class="partnar-img" src="EIMB.jpg" alt="EIMB">
+            <img class="partnar-img" src="ISTV.jpg" alt="ISTV">
+            <img class="partnar-img" src="CYBERTECH.jpg" alt="CYBERTECH">
+            <img class="partnar-img" src="POLYGENIUS.jpg" alt="POLYGENIUS">
+            <img class="partnar-img" src="SKYNET.jpg" alt="SKYNET">
+            <img class="partnar-img" src="IANA.jpg" alt="IANA">
+            <img class="partnar-img" src="EIMB.jpg" alt="EIMB">
+            <img class="partnar-img" src="ISTV.jpg" alt="ISTV">
+            <img class="partnar-img" src="CYBERTECH.jpg" alt="CYBERTECH">
+            <img class="partnar-img" src="POLYGENIUS.jpg" alt="POLYGENIUS">
+            <img class="partnar-img" src="SKYNET.jpg" alt="SKYNET">
+            <img class="partnar-img" src="IANA.jpg" alt="IANA">
+            <img class="partnar-img" src="EIMB.jpg" alt="EIMB">
+            <img class="partnar-img" src="ISTV.jpg" alt="ISTV">
+            <img class="partnar-img" src="CYBERTECH.jpg" alt="CYBERTECH">
+            <img class="partnar-img" src="POLYGENIUS.jpg" alt="POLYGENIUS">
+            <img class="partnar-img" src="SKYNET.jpg" alt="SKYNET">
+            <img class="partnar-img" src="IANA.jpg" alt="IANA">
+            <img class="partnar-img" src="EIMB.jpg" alt="EIMB">
+            <img class="partnar-img" src="ISTV.jpg" alt="ISTV">
+            <img class="partnar-img" src="CYBERTECH.jpg" alt="CYBERTECH">
+            <img class="partnar-img" src="POLYGENIUS.jpg" alt="POLYGENIUS">
+            <img class="partnar-img" src="SKYNET.jpg" alt="SKYNET">
+            <img class="partnar-img" src="IANA.jpg" alt="IANA">
+            <img class="partnar-img" src="EIMB.jpg" alt="EIMB">
+            <img class="partnar-img" src="ISTV.jpg" alt="ISTV">
+            <img class="partnar-img" src="CYBERTECH.jpg" alt="CYBERTECH">
+            <img class="partnar-img" src="POLYGENIUS.jpg" alt="POLYGENIUS">
+            <img class="partnar-img" src="SKYNET.jpg" alt="SKYNET">
+          </div>
+        </div>
+      </section>
+      <!--Voici la section contact-->
+      <section class="container text-center">
+        <h2 class="fw-bold">Contact</h2>
+        <p class="text-center">Envie d’en savoir plus ? Notre équipe reste disponible pour répondre à tes questions.</p>
+        <div class="text-center mt-3">
+          <a href="contacts.html" class="btn btn-primary">Nous contacter</a>
+        </div>
+      </section>
+    </div>
+    <!--Voici le footer-->
+    <footer class="pt-5 pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5 class="fw-bold mb-3 foottitre">À propos</h5>
+            <p class="text-white-50">
+              Nelyos Academy est une institution académique dédiée à l’excellence,
+              à l’innovation et à la formation de leaders engagés.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5 class="fw-bold mb-3 foottitre">Nos Liens</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-white-50 text-decoration-none">Accueil</a></li>
+              <li><a href="nos_filière.html" class="text-white-50 text-decoration-none">Nos Filières</a></li>
+              <li><a href="galerie.html" class="text-white-50 text-decoration-none">Galerie</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5 class="fw-bold mb-3 foottitre">Découvrir</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white-50 text-start text-decoration-none">Notre Vision</a></li>
+              <li><a href="#" class="text-white-50 text-start text-decoration-none">Campus</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5 class="fw-bold mb-3 foottitre">Contact</h5>
+             <ul class="list-unstyled">
+              <li><a href="mailto: etekporjeanbrayan@gmail.com" class="text-white-50 text-start text-decoration-none">contact@nelyosacademy.com</a></li>
+              <li><a href="tel: +22896365207" class="text-white-50 text-start text-decoration-none">96 36 52 07</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-secondary mt-4">
+        <div class="text-center text-white-50 pt-2">
+          &copy; 2025 Nelyos Academy. Tous droits réservés.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const videos = [
+      "video a1.mp4",
+      "video a2.mp4",
+      "video a3.mp4"
+    ];
+    const player = document.getElementById("herovideo");
+    let index = 0;
+    const DURATION = 8000; // 8 secondes
+    function changeVideo() {
+      player.classList.add("fade-out");
+
+      setTimeout(() => {
+        player.src = videos[index];
+        player.load();
+        player.play();
+        player.classList.remove("fade-out");
+        index = (index + 1) % videos.length;
+      }, 500); // Voici la fameuse durée du fade
+    }
+    // première vidéo
+    changeVideo();
+    // changement automatique toutes les 8 secondes
+    setInterval(changeVideo, DURATION);
+});
+
+    let currentActu = null;
+
+    const actuData = {
+      labo: {
+        title: "Lancement du laboratoire numérique",
+        text:  `Neylos Academy franchit une nouvelle étape dans son engagement pour l’innovation pédagogique avec l’ouverture officielle de son laboratoire numérique.
+Cet espace moderne est conçu pour offrir aux étudiants un environnement de travail axé sur la pratique, la création et l’expérimentation technologique. Équipé de postes informatiques performants, de logiciels spécialisés et d’outils collaboratifs, le laboratoire permet aux apprenants de concrétiser leurs projets académiques et professionnels.
+Le laboratoire numérique est destiné aux étudiants des filières Informatique, Communication et Marketing, favorisant ainsi une approche transversale des compétences numériques.
+À travers cette initiative, Neylos Academy réaffirme sa volonté de former des étudiants capables de répondre aux exigences du monde professionnel et aux défis technologiques de demain.` ,
+        image: "image-innov.jpg"
+      },
+      portes: {
+        title: "Journée Portes Ouvertes 2025",
+        text: `Neylos Academy organise sa Journée Portes Ouvertes 2025, une occasion privilégiée pour découvrir l’univers de l’école, ses formations et son environnement académique.
+Au programme :
+– Présentation des licences et des parcours de formation
+– Rencontres avec les enseignants et l’équipe pédagogique
+– Visites guidées des infrastructures
+– Échanges avec les étudiants
+Cette journée s’adresse aux futurs étudiants, aux parents ainsi qu’à toute personne souhaitant en savoir plus sur les valeurs et l’approche éducative de Neylos Academy.
+L’objectif est d’accompagner chaque visiteur dans son orientation et de lui offrir une vision claire des opportunités académiques et professionnelles proposées par l’établissement.` ,
+        image: "image-tkt.jpg"
+      },
+      concours: {
+        title: "Concours d’innovation étudiante",
+        text: `Neylos Academy a organisé son Concours d’innovation étudiante, un événement mettant en lumière la créativité, l’esprit d’initiative et les compétences techniques de ses étudiants.
+Les participants ont présenté des projets innovants dans les domaines du numérique, de la communication, du marketing et des solutions technologiques. Chaque projet a été évalué par un jury composé d’enseignants et de professionnels.
+Ce concours vise à encourager l’esprit entrepreneurial, le travail en équipe et l’application concrète des connaissances acquises en formation.
+À travers ce type d’initiative, Neylos Academy valorise l’innovation, la prise de responsabilité et la capacité des étudiants à proposer des solutions adaptées aux réalités du monde actuel.` ,
+        image: "image-concours.jpg"
+      },
+      biblio: {
+        title: "Nouvelle bibliothèque virtuelle",
+        text: `Dans une démarche de modernisation de ses outils pédagogiques, Neylos Academy met à disposition de ses étudiants une bibliothèque virtuelle accessible en ligne.
+Cette plateforme offre un accès à une large sélection de ressources académiques : ouvrages numériques, revues spécialisées, supports de cours et documents pédagogiques actualisés régulièrement.
+La bibliothèque virtuelle permet aux étudiants de consulter les ressources à tout moment, favorisant ainsi l’autonomie, la recherche personnelle et l’approfondissement des connaissances.
+Cet outil s’inscrit dans la volonté de Neylos Academy de proposer un enseignement moderne, flexible et adapté aux exigences de l’enseignement supérieur contemporain.` ,
+        image: "image-bibliothèque.jpg"
+      }
+    };
+  
+    function openActu(type) {
+      const panel = document.getElementById("actu-panel");
+    
+      // Si on reclique sur la même actu → fermer
+      if (currentActu === type) {
+        panel.classList.remove("active");
+        currentActu = null;
+        return;
+      }
+    
+      // Changer le contenu
+      document.getElementById("actu-title").innerText = actuData[type].title;
+      document.getElementById("actu-text").innerText = actuData[type].text;
+      panel.style.backgroundImage = `url(${actuData[type].image})`;
+    
+      panel.classList.add("active");
+      currentActu = type;
+  }
+    </script>
+  </body>
+</html>

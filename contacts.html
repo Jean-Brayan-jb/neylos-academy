@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – NELYOS ACADEMY </title>
+    <link rel="stylesheet" href="contacts.css">
+    <link rel="stylesheet" href="bootstrap2.css">
+    <script src="bootstrap.js" defer></script>
+    <script src="bootstrap.bundle.js" defer></script>
+</head>
+<body>
+
+            <!--C'est Navbar-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img class="imagetrans" width="100px" src="WhatsApp Image 2025-11-27 à 10.12.10_127332c5.jpg" alt="Logo Nelyos Academy">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="menu">
+          <span class="burger"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="menu">
+          <ul class="navbar-nav ms-auto text-end">
+            <li class="nav-item fw-bold"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item fw-bold"><a class="nav-link" href="nos_filière.html">Nos Filières</a></li>
+            <li class="nav-item fw-bold"><a class="nav-link" href="galerie.html">Galerie</a></li>
+            <li class="nav-item fw-bold"><a class="nav-link" href="contacts.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+        <h1>Contactez-nous</h1>
+        <p>NELYOS ACADEMY – Votre avenir commence ici</p>
+    </header>
+
+    <div class="container fordiv">
+        <div class="card contact-info">
+            <h2>Nos coordonnées</h2>
+            <p><strong>Adresse :</strong> Agoe, Lomé – Togo</p>
+            <p><strong>Téléphone :</strong> +228 96 36 52 07</p>
+            <p><strong>Email :</strong> contact@nelyosacademy.com</p>
+            <p><strong>Heures d'ouverture :</strong><br>Lun – Sam : 08h00 – 18h00</p>
+
+            <div class="map-container">
+                <img src="locali.png" class="reduit"></img>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Envoyer un message</h2>
+            <form id="contact-form">
+              <input type="text" name="name" placeholder="Votre nom" required>
+              <input type="email" name="email" placeholder="Votre email" required>
+              <input type="text" name="subject" placeholder="Objet" required>
+              <textarea name="message" placeholder="Votre message" required></textarea>
+              <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Voici le footer-->
+    <footer class="pt-5 pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5 class="fw-bold mb-3 foottitre">À propos</h5>
+            <p class="text-white-50">
+              Nelyos Academy est une institution académique dédiée à l’excellence,
+              à l’innovation et à la formation de leaders engagés.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5 class="fw-bold mb-3 foottitre">Nos Liens</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-white-50 text-decoration-none">Accueil</a></li>
+              <li><a href="nos_filière.html" class="text-white-50 text-decoration-none">Nos Filières</a></li>
+              <li><a href="galerie.html" class="text-white-50 text-decoration-none">Galerie</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5 class="fw-bold mb-3 foottitre">Découvrir</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white-50 text-start text-decoration-none">Notre Vision</a></li>
+              <li><a href="#" class="text-white-50 text-start text-decoration-none">Campus</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5 class="fw-bold mb-3 foottitre">Contact</h5>
+             <ul class="list-unstyled">
+              <li><a href="mailto: etekporjeanbrayan@gmail.com" class="text-white-50 text-start text-decoration-none">contact@nelyosacademy.com</a></li>
+              <li><a href="tel: +22896365207" class="text-white-50 text-start text-decoration-none">96 36 52 07</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-secondary mt-4">
+        <div class="text-center text-white-50 pt-2">
+          &copy; 2025 Nelyos Academy. Tous droits réservés.
+        </div>
+      </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("PUBLIC_KEY_ICI");
+    })();
+
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      emailjs.sendForm(
+        "SERVICE_ID_ICI",
+        "TEMPLATE_ID_ICI",
+        this
+      ).then(() => {
+        alert("Message envoyé avec succès !");
+        this.reset();
+      }, (error) => {
+        alert("Erreur lors de l’envoi");
+        console.log(error);
+      });
+    });
+  </script>
+
+</body>
+</html>
